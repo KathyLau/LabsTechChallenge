@@ -7,6 +7,9 @@ app = Flask(__name__)
 def main():
     return render_template('index.html')
 
+@app.route('/sl4237')
+def about():
+    return render_template('sl4237.html')
 
 if __name__ == '__main__':
     app.run()
